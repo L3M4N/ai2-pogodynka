@@ -36,3 +36,5 @@ App\Entity\Measurement:
                 max: .inf
                 notInRangeMessage: 'Celsius temperature must be between {{ min }} and {{ max }}.'
                 groups: ['create', 'edit']
+
+#poprawka lab d
