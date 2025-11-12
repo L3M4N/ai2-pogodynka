@@ -19,6 +19,8 @@ security:
             form_login:
                 login_path: app_login
                 check_path: app_login
+            login-throttling:
+                max_attempts: 2
             logout:
                 path: app_logout
 
@@ -35,6 +37,7 @@ security:
 
     role_hierarchy:
         ROLE_ADMIN:
+            - ROLE_MANAGER
             - ROLE_USER
             - ROLE_LOCATION_EDIT
             - ROLE_LOCATION_NEW
